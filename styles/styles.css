@@ -26,6 +26,8 @@ nav > ul {
   list-style-type: none;
   align-items: center;
   gap: 10px;
+  position: fixed;
+  width: 100%;
 }
 nav > ul > li {
   padding: 10px;
