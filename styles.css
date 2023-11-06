@@ -78,35 +78,120 @@ a {
 .container > .left > button {
   background-color: #3882f6;
   padding: 8px 17px;
-  border: #3882f6 1px solid;
+  border: #f9fef8 1px solid;
   border-radius: 8px;
+  color: #f9fef8;
 }
 
-.title{
-color: #3882f6;
-padding: 30px;
+.title {
+  color: #3882f6;
+  padding: 30px;
 }
 
 .container-2 {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   gap: 10px;
+padding: 10%;
 }
 
 .container-2 > .images {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
   gap: 20px;
 }
 
 .container-2 > .images > .img {
-flex: 0 1 25%;
-width: 200px;
-height: 200px;
-object-fit: cover;
-border: 3px solid #3882f6;
+  flex: 0 1 25%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 3px solid #3882f6;
+  border-radius: 8px;
+}
+
+.caption {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+.caption > .item {
+  align-self: flex-start;
+  width: 200px;
+  font-size: 18px;
+  color: #383d49;
+}
+
+.container-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: #e5e7eb;
+  padding: 10%;
+}
+.container-3 > .first {
+  font-size: 36px;
+  color: #1f2937;
+  font-style: italic;
+}
+.container-3>.socond{
+  font-size: 25px;
+  font-weight: 700;
+  margin-left: auto;
+  font-style:oblique;
+}
+
+.container-4{
+  display: flex;
+  justify-content: center;
+
+}
+
+.center{
+display: flex;
+gap: 30px;
+padding: 3% 7%;
+background-color: #3882f6;
+margin: 5% ;
+color: #e5e7eb;
 border-radius: 8px;
+}
+
+.sign1{
+  color: #f9fef8;
+}
+
+.sign2{
+  background-color: #3882f6;
+  padding: 8px 17px;
+  border: #f9fef8 1px solid;
+  border-radius: 8px;
+  color: #f9fef8;
+}
+.b{
+  display: flex;
+  justify-content: center;
+  width: 18%;
+  align-items: center;
+}
+
+div.sign1 p:nth-child(1){
+  font-size: large;
+font-weight: 700;
+}
+
+div.sign1 p:nth-child(2){
+font-size: medium;
+font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+  .images,.caption{
+flex-wrap: wrap;
+  }
 }
